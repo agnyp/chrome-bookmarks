@@ -2,7 +2,11 @@
   "name": "Chrome bookmarks",
   "version": "0.1",
   "description": "Bookmarks as they are meant.",
-  "permissions": ["declarativeContent","bookmarks"],
+  "permissions": [
+    "declarativeContent",
+    "bookmarks",
+    "tabs"
+  ],
   "background": {
     "scripts": ["bookmarks.js"],
     "persistent": false
