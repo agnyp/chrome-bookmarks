@@ -8,7 +8,7 @@
     "tabs"
   ],
   "background": {
-    "scripts": ["bookmarks.js"],
+    "scripts": ["background.js"],
     "persistent": false
   },
   "page_action": {
