@@ -1,3 +1,4 @@
+import './folder.css';
 import React, { Component } from "react";
 
 const renderWhen = (cond, component) => {
@@ -17,10 +18,14 @@ class Folder extends Component {
     }
   }
 
+  toggleState = (evt) => {
+    this.setState({ isOpen: !this.state.isOpen })
+  }
+
   render(){
     return (
       <div className={`folder ${this.props.className}`}>
-        <h3 className='title' onClick={ (evt) => this.setState({ isOpen: !this.state.isOpen })}>{this.props.title}</h3>
+        <h3 className='title' onClick={ this.toggleState }>{this.props.title}</h3>
         <div className='folder-content'>
           { renderWhen(this.state.isOpen, this.props.children) }
         </div>
