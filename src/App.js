@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Folder } from './components/folder/folder';
 import logo from './logo.svg';
 import './App.css';
 
@@ -47,6 +48,9 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Folder title={<b>Hallo</b>}>
+          kasdjfghasdkjfhgaskdjhfkjasdhfkjasdhfkjhsakjfhaskjfhsdkjhfskjdhfkjasdhfkjsadhfk
+        </Folder>
         <h1>Bookmarks</h1>
         <section id="bookmarks"></section>
         <script src="popup.js"></script>
