@@ -50,7 +50,8 @@
     "build": "node scripts/build.js",
     "test": "BABEL_ENV=test jest",
     "test:watch": "npm run test -- --watch",
-    "test:coverage": "npm run test -- --coverage"
+    "test:coverage": "npm run test -- --coverage",
+    "coverage": "opn ./coverage/lcov-report/index.html"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -99,6 +100,7 @@
   "devDependencies": {
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "jest-enzyme": "^6.0.1"
+    "jest-enzyme": "^6.0.1",
+    "opn-cli": "^3.1.0"
   }
 }
